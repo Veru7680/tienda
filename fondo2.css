@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+body{
+	background-color: #000000;
+}
+nav{
+	max-width:1000;
+	margin: auto;
+	background-color: #333;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 10px 5px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: rgb(233, 0, 0);
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding:10px 5px;
+}
+
+#html{
+	margin: auto;
+	padding: 10px;
+	max-width: 400px;
+	background: white;
+
+}
+.derecha,
+.izquierda {
+    width: 45%;
+    margin: 5px;
+    height: 600px;
+}
+
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 1;
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical cuando sea necesario */
+}
+
+
+.button-actualizar {
+	float: right;
+    background-color: rgba(219, 219, 26, 0.863); /* Fondo amarillo */
+    color: black; /* Texto en negro */
+    font-style: italic; /* Fuente en cursiva */
+    padding: 10px 20px; /* Espacio alrededor del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.button-actualizar:hover {
+    background-color: #c2ac5496; /* Cambio de color al pasar el cursor */
+}
+
+
+
