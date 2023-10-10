@@ -14,7 +14,14 @@ body{
     background-position: 0 0,10px 10px;
     display: flex;
     max-height: 100vh;
+    
 }
+
+table, td, th{
+    padding: 1px;
+    width: 100%;
+}
+
 
 .form_input {
     width: 100%; /* Ancho del 100% para ocupar todo el ancho del contenedor */
