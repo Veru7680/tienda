@@ -119,3 +119,13 @@
 		cursor: pointer;
 		font-size: 18px;
 	}
+
+    .todo {
+        width: 75%;
+        margin: 5px;
+        height: 600px;
+        background: rgba(255, 0, 0, 0);
+        position: relative;
+        left: 20%;
+        
+    }
