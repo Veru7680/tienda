@@ -16,6 +16,9 @@
     <input class="controls" type="text" name="Nombre" id="" placeholder="ingrese su nombre" >
     <input class="controls" type="password" name="Clave" id="" placeholder="ingrese clave" >
     <input class="botons" name="login_user" type="submit" value="registar">
+    <p>
+    No te registraste? <a href="registrarse_cliente.php">Registrase-Sing Up</a>
+    </p>
     <div class="slider">
         <iframe name="contenido-dinamico"  class="contenido-dinamico" src="" frameborder="0" ></iframe>
       </div>

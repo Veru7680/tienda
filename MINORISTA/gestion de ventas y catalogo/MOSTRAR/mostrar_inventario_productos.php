@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="../../../cssingreso/product.css">
 
 </head>
 <body>

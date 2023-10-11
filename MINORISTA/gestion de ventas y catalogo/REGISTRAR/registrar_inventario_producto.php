@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <title>Formulario para Agregar Producto</title>
-    <link rel="stylesheet" href="estil.css">
+    <link rel="stylesheet" href="../../../cssingreso/estil.css">
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data">

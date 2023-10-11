@@ -61,9 +61,13 @@ nav{
 	background: white;
 
 }
-.derecha,
-.izquierda {
+.derecha {
     width: 45%;
+    margin: 5px;
+    height: 600px;
+}
+.izquierda {
+    width: 52%;
     margin: 5px;
     height: 600px;
 }

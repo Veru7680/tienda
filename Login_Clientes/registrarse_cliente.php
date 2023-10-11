@@ -25,6 +25,9 @@
   	  <input class="controls" type="password" id="" name="password_2">
   	</div>
     <input class="botons" type="submit" name="reg_user" value="registar">
+    <p>
+    Ya estas registrado? <a href="continuar_cliente.php">Iniciar secion</a>
+    </p>
     <div class="slider">
         <iframe name="contenido-dinamico" class="contenido-dinamico" src="" frameborder="0" ></iframe>
       </div>
