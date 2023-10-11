@@ -4,34 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de Proveedores</title>
-    <link rel="stylesheet" href="../../css/estiloTablas.css">
+    <link rel="stylesheet" href="../../../cssingreso/product.css">
 </head>
 <body>
-    
-    <h1>Productos</h1>
+    <h1>Clientes</h1>
     <?php
      include "../../../conexion.php";
-    $select_query = "SELECT * FROM producto LIMIT 10";
+    $select_query = "SELECT * FROM usuarios LIMIT 10";
     $result = mysqli_query($mysqli_link, $select_query);
     ?>
     <table>
         <tr>
             <th>ID</th>
             <th>Nombre</th>
-            <th>Precio</th>
-            <th>Stock</th>
-            <th>IdCategoria</th>
-            <th>Descripcion</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
         </tr>
         <?php
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             echo "<tr>";
-            echo "<td>" . $row['ID'] . "</td>";
+            echo "<td>" . $row['idusuario'] . "</td>";
             echo "<td>" . $row['Nombre'] . "</td>";
-            echo "<td>" . $row['Precio'] ." Bs"."</td>";
-            echo "<td>" . $row['Stock'] . "</td>";
-            echo "<td>" . $row['IdCategoria'] . "</td>";
-            echo "<td>" . $row['Descripcion'] . "</td>";
+            echo "<td>" . $row['Correo'] ."</td>";
+            echo "<td>" . $row['Clave'] . "</td>";
             echo "</tr>";
         }
         // close the db connection

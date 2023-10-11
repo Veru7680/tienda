@@ -9,15 +9,15 @@
     <title>FORMULARIO</title>
 </head>
 <body>
-    <form action="continuar_cliente.php" method="post">
+    <form action="continuar_minorista.php" method="post">
     <section class="form-register">
-        <h4>entrar cliente</h4>
+        <h4>Entrar Minorista</h4>
         <?php include('errors.php'); ?>
     <input class="controls" type="text" name="Nombre" id="" placeholder="ingrese su nombre" >
     <input class="controls" type="password" name="Clave" id="" placeholder="ingrese clave" >
     <input class="botons" name="login_user" type="submit" value="registar">
     <p>
-    No te registraste? <a href="registrarse_cliente.php">Registrase-Sing Up</a>
+    No te registraste? <a href="registrarse_minorista.php">Registrase-Sing Up</a>
     </p>
     <div class="slider">
         <iframe name="contenido-dinamico"  class="contenido-dinamico" src="" frameborder="0" ></iframe>

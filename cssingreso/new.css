@@ -34,7 +34,7 @@ nav{
 }
 .menu-vertical li a{
   display: block;
-  color: white;
+  color: rgb(0, 110, 255);
   padding: 15px 15px 15px 20px;
   text-decoration: none;
 }

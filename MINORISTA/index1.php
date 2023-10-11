@@ -1,3 +1,17 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['Nombre'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: ../Login_minoristas/continuar_minorista.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['Nombre']);
+  	header("location: ../Login_minoristas/continuar_minorista.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +22,13 @@
 </head>
 
 <body>
-	
+		<!-- logged in user information -->
+		<?php  if (isset($_SESSION['Nombre'])) : ?>
+			<p>Welcome <strong><?php echo $_SESSION['Nombre']; ?></strong></p>
+			<p> <a href="index1.php?logout='1'" style="color: red;">logout</a> </p>
+		<?php endif ?>
+	</div>
+
 	<div class="container">
 	
 				
@@ -20,12 +40,12 @@
 			<li>
 				<a href="#">GESTION DE VENTAS Y CATALOGO</a>
 				<ul class="menu-vertical">
-                    <li><a href="gestion de ventas y catalogo/REGISTRAR/registrar_producto.html" target="derecha">REGISTAR INVENTARIO</a></li>
-					<li><a href="gestion de ventas y catalogo/ACTUALZAR/actualizar_producto.html" target="derecha">ACTUALIZAR INVENTARIO</a></li>
-                    <li><a href="gestion de ventas y catalogo/BORRAR/borrar_producto.html" target="derecha">BORRAR INVENTARIO</a></li>
+                    <li><a href="gestion de ventas y catalogo/REGISTRAR/registrar_inventario_producto.php" target="derecha">REGISTAR INVENTARIO</a></li>
+					<li><a href="gestion de ventas y catalogo/ACTUALZAR/actualizar_producto.php" target="derecha">ACTUALIZAR INVENTARIO</a></li>
+                    <li><a href="gestion de ventas y catalogo/BORRAR/borrar_producto.php" target="derecha">BORRAR INVENTARIO</a></li>
             
 
-					<li><a href="gestion de ventas y catalogo/MOSTRAR/mostrar_PRODUCTO.php" target="izquierda">MOSTRAR CATALOGO</a></li>
+					<li><a href="gestion de ventas y catalogo/MOSTRAR/mostrar_inventario_productos.php" target="izquierda">MOSTRAR CATALOGO</a></li>
 				</ul>
 			</li>
 			
@@ -34,10 +54,10 @@
 				<ul class="menu-vertical">
                     <li><a href="perfiles de clientes y personalizacion/REGISTRAR/registar_cliente.html" target="derecha">REGISTAR CLIENTE</a></li>
 					<li><a href="perfiles de clientes y personalizacion/ACTUALIZAR/actualizar_cliente.html" target="derecha">ACTUALIZAR CLIENTE</a></li>
-                    <li><a href="perfiles de clientes y personalizacion/BORRAR/borrar_cliente.html" target="derecha">BORRAR CLIENTE</a></li>
+                    <li><a href="perfiles de clientes y personalizacion/BORRAR/borrar_producto.php" target="derecha">BORRAR CLIENTE</a></li>
             
 
-					<li><a href="" target="izquierda">MOSTRAR CLIENTE</a></li>
+					<li><a href="perfiles de clientes y personalizacion/MOSTRAR/mostrar_CLIENTE.php" target="izquierda">MOSTRAR CLIENTE</a></li>
                 </ul>
 			</li>
 
