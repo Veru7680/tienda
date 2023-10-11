@@ -1,21 +1,23 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="escudo.png" type="image/x-icon" /> 
-    <link rel="stylesheet" href="cssingreso/estilo.css">
+    <link rel="stylesheet" href="../cssingreso/estilo.css">
     <title>FORMULARIO</title>
 </head>
 <body>
-    <form action="../phpingreso/insertar2.php" method="post">
+    <form action="continuar_cliente.php" method="post">
     <section class="form-register">
         <h4>entrar cliente</h4>
-    <input class="controls" type="text" name="Correo" id="" placeholder="ingrese correo electronico" >
+        <?php include('errors.php'); ?>
+    <input class="controls" type="text" name="Nombre" id="" placeholder="ingrese su nombre" >
     <input class="controls" type="password" name="Clave" id="" placeholder="ingrese clave" >
-    <input class="botons" type="submit" value="registar">
+    <input class="botons" name="login_user" type="submit" value="registar">
     <div class="slider">
-        <iframe name="contenido-dinamico" class="contenido-dinamico" src="" frameborder="0" ></iframe>
+        <iframe name="contenido-dinamico"  class="contenido-dinamico" src="" frameborder="0" ></iframe>
       </div>
     </section>
 </form>
