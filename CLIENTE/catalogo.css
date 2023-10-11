@@ -1,0 +1,72 @@
+/* Estilos para las tarjetas de productos */
+body {
+    background-color: #f2f2f2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #dcdcdc;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+    width: 25%;
+    float: left;
+    margin: 0 1%;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.product-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    display: block;
+}
+
+/* Estilos para responsividad */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: 100%;
+        margin: 0;
+    }
+}
