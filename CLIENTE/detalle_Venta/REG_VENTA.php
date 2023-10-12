@@ -1,6 +1,6 @@
 <?php
-    include "../../php/conexion.php";
-    $query=mysqli_query($mysqli_link,"SELECT Nombre FROM cliente");
+    include "../../conexion.php";
+    $query=mysqli_query($mysqli_link,"SELECT Nombre FROM usuarios");
     $query1=mysqli_query($mysqli_link,"SELECT Nombre, Precio FROM producto");
 
 ?>
