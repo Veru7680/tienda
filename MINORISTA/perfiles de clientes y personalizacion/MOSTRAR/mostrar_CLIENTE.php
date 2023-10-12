@@ -17,8 +17,7 @@
         <tr>
             <th>ID</th>
             <th>Nombre</th>
-            <th>Telefono</th>
-            <th>Direccion</th>
+            <th>Correo</th>
         </tr>
         <?php
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -26,7 +25,6 @@
             echo "<td>" . $row['idusuario'] . "</td>";
             echo "<td>" . $row['Nombre'] . "</td>";
             echo "<td>" . $row['Correo'] ."</td>";
-            echo "<td>" . $row['Clave'] . "</td>";
             echo "</tr>";
         }
         // close the db connection

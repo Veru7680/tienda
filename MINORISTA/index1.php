@@ -52,7 +52,7 @@
 			<li>
 				<a href="#">PERFILES DE CLIENTES Y PERSONALIZACION</a>
 				<ul class="menu-vertical">
-                    <li><a href="perfiles de clientes y personalizacion/REGISTRAR/registar_cliente.html" target="derecha">REGISTAR CLIENTE</a></li>
+                    <li><a href="../Login_Clientes/registrarse_cliente.php" target="derecha">REGISTAR CLIENTE</a></li>
 					<li><a href="perfiles de clientes y personalizacion/ACTUALIZAR/actualizar_cliente.html" target="derecha">ACTUALIZAR CLIENTE</a></li>
                     <li><a href="perfiles de clientes y personalizacion/BORRAR/borrar_producto.php" target="derecha">BORRAR CLIENTE</a></li>
             
