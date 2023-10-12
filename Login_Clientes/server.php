@@ -50,7 +50,7 @@ if (isset($_POST['reg_user'])) {
   	mysqli_query($mysqli_link , $query);
   	$_SESSION['Nombre'] = $username;
   	$_SESSION['success'] = "Estas logeado";
-  	header('location: ../CLIENTE/index_cliente.html');
+  	header('location: ../CLIENTE/index_cliente.php');
   }
 }
 
@@ -73,7 +73,7 @@ if (isset($_POST['login_user'])) {
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['Nombre'] = $Nombre;
   	  $_SESSION['success'] = "Estas logueadi";
-  	  header('location: ../CLIENTE/index_cliente.html');
+  	  header('location: ../CLIENTE/index_cliente.php');
   	}else {
   		array_push($errors, "Nombre incorrecto o Contraseña incorrecta");
   	}
