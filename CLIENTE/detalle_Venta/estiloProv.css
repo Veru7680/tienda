@@ -44,7 +44,8 @@ body{
     text-align: center;
 }
 .form_tittle{
-    font-size: 2rem;
+    color: blue;
+    font-size: 4rem;
     margin-bottom: .5em;
 }
 

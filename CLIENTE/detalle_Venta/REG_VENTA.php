@@ -3,6 +3,17 @@
     $query=mysqli_query($mysqli_link,"SELECT Nombre FROM usuarios");
     $query1=mysqli_query($mysqli_link,"SELECT Nombre, Precio FROM producto");
 
+     
+    session_start(); 
+    if (!isset($_SESSION['Nombre'])) {
+        $_SESSION['msg'] = "You must log in first";
+        header('location: ../Login_clientes/continuar_cliente.php');
+    }
+    if (isset($_GET['logout'])) {
+        session_destroy();
+        unset($_SESSION['Nombre']);
+        header("location: ../Login_clientes/continuar_cliente.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,17 +36,12 @@
         <h2 class="form_tittle">COMPRAR</h2>
             <div class="form_container">
             <div class="form_group initial">
-                <select name="NombreCliente" class="form_input" id="productoSelect">
-                    <?php
-                    while ($datos = mysqli_fetch_array($query)) {
-                    ?>
-                        <option value="<?php echo $datos['Nombre'] ?>"> <?php echo $datos['Nombre'] ?> </option>
-                    <?php
-                    }
-                    ?>
-                </select>
-            </div>
-            Nombre
+                <?php  if (isset($_SESSION['Nombre'])) : ?>Nombre: 
+                    <strong style= "color: Black; font-size: 23px;"><?php echo $_SESSION['Nombre']; ?></strong>
+                    <?php endif ?>
+                </div>
+                <br>
+            
             <div class="form_group initial">
                 <input name="Fecha" type="date" id="Fecha" class="form_input" placeholder=" ">
                 <label for="name" class="form_label">Fecha</label>

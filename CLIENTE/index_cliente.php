@@ -26,8 +26,6 @@
 			<label for="btn-menu">☰</label>
 		
 		</div>
-		<!-- logged in user information -->
-		
 
 			<div class="logo">
 				<h1>CATALOGO</h1>
