@@ -5,7 +5,7 @@ function insertarVenta(){
     $MF = $_POST['Monto_Final'];
     $Descuento = $_POST['Descuento'];
 
-    include "../conexion.php";
+    include "../../conexion.php";
     //INSERT INTO `usuarios` (`Idusr`, `Nombre`, `Clave`, `Fecha`) VALUES (NULL, 'ronald', '123456', '2023-08-01');
     $insert_query = "INSERT INTO `venta`(`Fecha`,`Monto_Final`,`Descuento`, `Nombre`) 
     VALUES ('". mysqli_real_escape_string($mysqli_link, $Fecha)."','".mysqli_real_escape_string($mysqli_link, $MF)."','".mysqli_real_escape_string($mysqli_link, $Descuento)."','".mysqli_real_escape_string($mysqli_link, $Nombre) ."')";
