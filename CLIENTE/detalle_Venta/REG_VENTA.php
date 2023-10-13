@@ -24,10 +24,15 @@
 <body>
    
     <form action="REG_VENTA_conect.php" method="post" class="form">
+<<<<<<< HEAD
         
         <h2 class="form_tittle">REGISTRAR COMPRA</h2>
        
         <div class="form_container">
+=======
+        <h2 class="form_tittle">COMPRAR</h2>
+            <div class="form_container">
+>>>>>>> 52dd8f79bb6b235ec31aefee1b07f1b4c61ea3c1
             <div class="form_group initial">
                 <select name="NombreCliente" class="form_input" id="productoSelect">
                     <?php
