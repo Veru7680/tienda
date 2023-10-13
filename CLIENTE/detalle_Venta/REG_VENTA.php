@@ -40,6 +40,7 @@
             <div class="form_group initial">
                 <?php  if (isset($_SESSION['Nombre'])) : ?>Nombre: 
                     <strong style= "color: Black; font-size: 23px;"><?php echo $_SESSION['Nombre']; ?></strong>
+                    <input type="hidden" name="nombre_cliente" value="<?php echo $_SESSION['Nombre']; ?>">
                     <?php endif ?>
                 </div>
                 <br>
