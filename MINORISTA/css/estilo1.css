@@ -9,7 +9,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #001813;
-    background-image:  radial-gradient(#270324 0.5px, #535151 0.5px);
+    background-image:  radial-gradient(#82e2fa 0.5px, #dbcfcf 0.5px);
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
     display: flex;
@@ -17,10 +17,14 @@ body{
     
 }
 
-table, td, th{
+td, th {
+    margin: -1px; /* Establece un margen negativo para eliminar el espaciado entre filas */
     padding: 1px;
     width: 100%;
+    margin: -1px; 
 }
+
+
 
 
 .form_input {
