@@ -3,12 +3,12 @@
 
   if (!isset($_SESSION['Nombre'])) {
   	$_SESSION['msg'] = "You must log in first";
-  	header('location: ../Login_minoristas/continuar_minorista.php');
+  	header('location: ../Login_clientes/continuar_cliente.php');
   }
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['Nombre']);
-  	header("location: ../Login_minoristas/continuar_minorista.php");
+  	header("location: ../Login_clientes/continuar_cliente.php");
   }
 ?>
 
@@ -26,7 +26,12 @@
 			<label for="btn-menu">☰</label>
 		
 		</div>
-		
+		<!-- logged in user information -->
+		<?php  if (isset($_SESSION['Nombre'])) : ?>
+			<p>Welcome <strong><?php echo $_SESSION['Nombre']; ?></strong></p>
+			<p> <a href="index_cliente.php?logout='1'" style="color: red;">logout</a> </p>
+		<?php endif ?>
+
 			<div class="logo">
 				<h1>CATALOGO</h1>
 			</div>
