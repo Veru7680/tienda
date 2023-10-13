@@ -41,16 +41,17 @@ h2{
 
 .form {
     background-color: #ffffd2;
-    margin: 3em auto; /* Aumenta el valor de margin-top para mover el cuadro hacia abajo */
+    margin: 3em auto;
     width: 90%;
-   
+    height: 100%; /* Ajusta el alto del formulario al 100% del cuerpo */
     padding: 4.5em 3em;
     box-shadow: 0 5px 10px -5px rgba(190, 2, 2, 0.4);
     text-align: center;
 }
 
+
 .form_tittle{
-    color: blue;
+    color: #fe7c0a;
     font-size: 4rem;
     margin-bottom: .5em;
 }
