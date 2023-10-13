@@ -24,38 +24,42 @@
     overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #8686ff;
-    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #8686ff 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: radial-gradient(#001c00, #004845, #fe7c0a);
+    background-size: 100% 100%; /* Ajustar el fondo al 100% tanto horizontal como verticalmente */
+ 
     display: flex;
     max-height: 100vh;
+    margin: 0; /* Para eliminar el margen predeterminado del cuerpo */
 }
 
-.form{
-    background-color: white;
-    margin: auto;
+
+h2{
+    color: #001c00;
+}
+
+.form {
+    background-color: #ffffd2;
+    margin: 3em auto; /* Aumenta el valor de margin-top para mover el cuadro hacia abajo */
     width: 90%;
-    max-width: 400px;
+   
     padding: 4.5em 3em;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0/40%);
+    box-shadow: 0 5px 10px -5px rgba(190, 2, 2, 0.4);
     text-align: center;
 }
+
 .form_tittle{
     font-size: 2rem;
     margin-bottom: .5em;
 }
 
+
+
 .form_paragraph{
     font-weight: 300;
 }
 
-.form_link{
-    font-weight: 400;
-    color: black;
-}
 .form_container{
     margin-top: 3em;
     display: grid;
@@ -64,13 +68,13 @@ body{
 
 .form_group{
     position: relative;
-    --color: #5757577e;
+    --color: #001c00;;
 }
 
 .form_input{
     width: 100%;
     background: none;
-    color: #706c6c;
+    color: #030303;
     font-size: 1rem;
     padding: .6em .3em;
     border: none;
