@@ -96,7 +96,7 @@
 
             <br>
             <br>
-            <input type="submit" class="form_submit" value="Entrar">
+            <input type="submit" class="form_submit" value="Enviar">
         </div>
     </form>
 

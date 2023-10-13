@@ -48,7 +48,7 @@
 <div class="container-menu">
 	<div class="cont-menu">
 		<nav>
-			<a href="#">CATEGORIA</a>
+		
 			<a target="todo" href="prueba.php">PRODUCTOS</a>
 		
 		</nav>
