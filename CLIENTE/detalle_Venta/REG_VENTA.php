@@ -114,18 +114,7 @@
         formulario.style.display = (formulario.style.display === "none" || formulario.style.display === "") ? "block" : "none";
     }
 
-    function calcularSubtotal(inputCantidad) {
-    var fila = inputCantidad.parentNode.parentNode;
-    var inputPrecio = fila.querySelector('.precio-input');
-    var inputSubtotal = fila.querySelector('.subtotal-input');
     
-    var cantidad = parseFloat(inputCantidad.value) || 0; 
-    var precio = parseFloat(inputPrecio.value) || 0; 
-    
-    var subtotal = cantidad * precio;
-    inputSubtotal.value = subtotal.toFixed(2); 
-    }
-
     function actualizarPrecio(select) {
     var precioInput = select.parentNode.nextElementSibling.querySelector('.precio-input');
     var selectedOption = select.options[select.selectedIndex];
@@ -141,23 +130,7 @@
 
     
 
-    function aplicarDescuento() {
-    var descuento = parseFloat(document.getElementById("descuento").value) || 0;
-    var filas = document.querySelectorAll("#comprasTable tr:not(:first-child)");
-    var sumaTotal = 0;
-    filas.forEach(function (fila) {
-        var subtotalInput = fila.querySelector('.subtotal-input');
-        var subtotal = parseFloat(subtotalInput.value) || 0;
-        sumaTotal += subtotal;
-    });
-
-    // Calcular el monto final con el descuento
-    var montoFinalConDescuento = sumaTotal * ((100 - descuento) / 100);
-
-    // Actualizar el contenido del elemento 'montoFinalHidden'
-    document.getElementById("montoFinal").value = montoFinalConDescuento.toFixed(2);
-}
-
+    
     function calcularSubtotal(inputCantidad) {
     var fila = inputCantidad.parentNode.parentNode;
     var inputPrecio = fila.querySelector('.precio-input');
@@ -182,7 +155,27 @@
     var sumaTotalDiv = document.getElementById("sumaSubtotales");
     sumaTotalDiv.textContent = "Total de Subtotales: " + sumaTotal.toFixed(2); 
     }
- 
+
+    function aplicarDescuento() {
+    var descuento = parseFloat(document.getElementById("descuento").value) || 0;
+    var filas = document.querySelectorAll("#comprasTable tr:not(:first-child)");
+    var sumaTotal = 0;
+    filas.forEach(function (fila) {
+        var subtotalInput = fila.querySelector('.subtotal-input');
+        var subtotal = parseFloat(subtotalInput.value) || 0;
+        sumaTotal += subtotal;
+    });
+
+    // Calcular el monto final con el descuento
+    var montoFinalConDescuento = sumaTotal * ((100 - descuento) / 100);
+
+    // Actualizar el contenido del elemento 'sumaSubtotales' con el monto final con descuento
+    document.getElementById("sumaSubtotales").innerHTML = "MONTO FINAL: " + montoFinalConDescuento.toFixed(2);
+
+    // Actualizar el contenido del elemento 'montoFinalHidden'
+    document.getElementById("montoFinalHidden").value = montoFinalConDescuento.toFixed(2);
+}
+
     actualizarPrecio(document.getElementById("productoSelect"));
 </script>
 </html>
