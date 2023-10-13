@@ -27,10 +27,7 @@
 		
 		</div>
 		<!-- logged in user information -->
-		<?php  if (isset($_SESSION['Nombre'])) : ?>
-			<p>Welcome <strong><?php echo $_SESSION['Nombre']; ?></strong></p>
-			<p> <a href="index_cliente.php?logout='1'" style="color: red;">logout</a> </p>
-		<?php endif ?>
+		
 
 			<div class="logo">
 				<h1>CATALOGO</h1>
@@ -38,9 +35,12 @@
 		
 
 			<nav class="menu">
-				<a href="index_cliente.html">Inicio</a>
+				<a href="index_cliente.php">Inicio</a>
 				<a href="../Login_Clientes/registrarse_cliente.php">Registrarse</a>
-				<a href="index1.php?logout='1'">Cerrar secion</a>
+				<?php  if (isset($_SESSION['Nombre'])) : ?>
+				<strong style= "color: white"><?php echo $_SESSION['Nombre']; ?></strong>
+				<a href="index_cliente.php?logout='1'" style="font-weight: bold; color: red;">Cerrar Secion</a> </p>
+		<?php endif ?>
 			</nav>
 		</div>
 	</header>

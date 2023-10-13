@@ -22,11 +22,8 @@
 </style>
 <body>
     <form action="REG_VENTA_conect.php" method="post" class="form">
-        <h2 class="form_tittle">REGISTRAR VENTA</h2>
-        <p class="form_paragraph"> ¿Por qué este formulario?
-            <a href="#" class="form_link"> Entra aquí</a>
-        </p>
-        <div class="form_container">
+        <h2 class="form_tittle">COMPRAR</h2>
+            <div class="form_container">
             <div class="form_group initial">
                 <select name="NombreCliente" class="form_input" id="productoSelect">
                     <?php
