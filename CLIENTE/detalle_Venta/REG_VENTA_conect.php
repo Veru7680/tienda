@@ -3,7 +3,7 @@ function insertarVenta(){
     $Nombre = $_POST['Nombre_Cliente'];
     $Fecha = $_POST['Fecha'];
     $MF = $_POST['Monto_Final'];
-    $Descuento = $_POST['Descuento'];
+    $Descuento = $_POST['Descuento_Final'];
 
     include "../../conexion.php";
     //INSERT INTO `usuarios` (`Idusr`, `Nombre`, `Clave`, `Fecha`) VALUES (NULL, 'ronald', '123456', '2023-08-01');

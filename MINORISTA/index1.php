@@ -62,10 +62,10 @@
 			</li>
 
             <li>
-				<a href="#">PROCESAMIENTO Y CUMPLIMIENTO DE PEDIDO</a>
+				<a href="#">PEDIDOS</a>
 				<ul class="menu-vertical">
 					
-					<li><a href="nada.html" target="izquierda">LISTA DE PEDIDOS </a></li>
+					<li><a href="pedidos/mostrar/mostrar_ventas.php" target="izquierda">LISTA DE PEDIDOS </a></li>
 
                 </ul>
 			</li>

@@ -52,13 +52,15 @@
             </div>
             <br>
             <div class="form_group initial">
-                <p id="sumaSubtotales">MONTO FINAL: <span id="montoFinal">0.00</span></p>
+                <p id="sumaSubtotales">AHUN NO PIDIO NINGUN PRODUCTO: <span id="montoFinal">0.00</span></p>
+                <p id="descuentoP">DESCUENTO: <span id="descuento_Total">0.00</span></p>
                 <input type="hidden" name="Monto_Final" id="montoFinalHidden" value="0.00">
-                <input name="Descuento" type="text" id="descuento" placeholder="Descuento (%)">
+                <input type="hidden" name="Descuento_Final" id="Descuento_Final" value="0.00">
+                <input name="Descuento" type="text" id="descuento" value="10%" readonly>
                 <button type="button" onclick="aplicarDescuento()">Aplicar Descuento</button>
             </div>
             <br>
-            <button type="button" onclick="mostrarOcultarFormulario()">Detalle de Venta</button>
+            <button type="button" onclick="mostrarOcultarFormulario()">Detalle de la compra</button>
 
             <div class="form_group" id="formularioCompra">
                 <table id="comprasTable">
@@ -72,7 +74,7 @@
                     <!-- ... -->
                     <tr>
                         <td>
-                            <select name="Nombre" class="form_input" onchange="actualizarPrecio(this)">
+                            <select name="Precio" class="form_input" onchange="actualizarPrecio(this)">
                                 <option value="">Seleccione un producto</option> 
                                 <?php
                                 mysqli_data_seek($query1, 0); 
@@ -84,8 +86,8 @@
                                 ?>
                             </select>
                         </td>
-                        <td><input type="text" name="precio[]" class="precio-input" readonly value=""></td>
-                        <td><input type="number" name="cantidad[]" oninput="calcularSubtotal(this)"></td>
+                        <td><input type="text" name="precio[]" class="precio-input" readonly value="0.00"></td>
+                        <td><input type="number" name="cantidad[]" oninput="calcularSubtotal(this)" ></td>
                         <td><input type="text" name="subtotal[]" class="subtotal-input" readonly value=""></td>
                         <td><button type="button" onclick="eliminarFila(this)">Eliminar</button></td> 
                     </tr>
@@ -163,7 +165,12 @@
     }
 
     function aplicarDescuento() {
-    var descuento = parseFloat(document.getElementById("descuento").value) || 0;
+    var descuentoInput = document.getElementById("descuento");
+    var descuentoValue = descuentoInput.value;
+
+    // Eliminar el '%' del valor del descuento si está presente
+    var descuento = parseFloat(descuentoValue.replace('%', '')) || 0;
+    
     var filas = document.querySelectorAll("#comprasTable tr:not(:first-child)");
     var sumaTotal = 0;
     filas.forEach(function (fila) {
@@ -174,12 +181,14 @@
 
     // Calcular el monto final con el descuento
     var montoFinalConDescuento = sumaTotal * ((100 - descuento) / 100);
+    
+    var descuentoOficial = sumaTotal - montoFinalConDescuento;
 
-    // Actualizar el contenido del elemento 'sumaSubtotales' con el monto final con descuento
-    document.getElementById("sumaSubtotales").innerHTML = "MONTO FINAL: " + montoFinalConDescuento.toFixed(2);
-
+    document.getElementById("sumaSubtotales").innerHTML = "MONTO CON DESCUENTO: " + montoFinalConDescuento.toFixed(2);
+    document.getElementById("descuentoP").innerHTML = "DESCUENTO: " + descuentoOficial.toFixed(2);
     // Actualizar el contenido del elemento 'montoFinalHidden'
     document.getElementById("montoFinalHidden").value = montoFinalConDescuento.toFixed(2);
+    document.getElementById("Descuento_Final").value = descuentoOficial.toFixed(2);
 }
 
     actualizarPrecio(document.getElementById("productoSelect"));
