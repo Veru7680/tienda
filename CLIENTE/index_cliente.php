@@ -46,7 +46,7 @@
 	<div class="cont-menu">
 		<nav>
 			<a href="#">CATEGORIA</a>
-			<a target="todo" href="mostrar_producto.php">PRODUCTOS</a>
+			<a target="todo" href="prueba.php">PRODUCTOS</a>
 		
 		</nav>
 		<label for="btn-menu">✖️</label>
