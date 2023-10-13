@@ -6,6 +6,7 @@
     }
     
     .form-register{
+      opacity: 0.78;
         width: 500px;
         background:#ffffd2;
         padding: 20 px;
@@ -13,7 +14,7 @@
         margin-top: 100px;
         border-radius: 10px;
         font-family: 'underline';
-        color: rgb(31, 29, 29);
+        color:  solid rgb(31, 29, 29);
         box-shadow: 7px 13px 37pz #0d3302 ;
       
     }
@@ -33,7 +34,7 @@
     
     
     .form-register a{
-        color: white;
+        color: solid white;
         text-decoration: none;
     }
     
@@ -50,10 +51,4 @@
       color: rgb(255, 255, 255);
       margin: 20px;
       font-size: 16px;
-    
-    }
-    body {
-       background:#ffd965;
-       
-      }
-      
+    } 
