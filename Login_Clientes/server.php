@@ -72,7 +72,7 @@ if (isset($_POST['login_user'])) {
   	$results = mysqli_query($mysqli_link , $query);
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['Nombre'] = $Nombre;
-  	  $_SESSION['success'] = "Estas logueadi";
+  	  $_SESSION['success'] = "Estas logueado";
   	  header('location: ../CLIENTE/index_cliente.php');
   	}else {
   		array_push($errors, "Nombre incorrecto o Contraseña incorrecta");
