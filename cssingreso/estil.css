@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(to bottom, #ffd965, #004845);
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px; /* Ajusta el tamaño de fuente, por ejemplo, a 14px */
+    padding: 10px; /* Ajusta el relleno (padding) en lugar de 20px */
+    filter: brightness(0.8); /* Aplica un tinte (puedes ajustar el valor para cambiar la intensidad) */
+}
+
+
+form {
+    background: #004845;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fcfcfb;
+    color: #000;
+}
+
+form input[type="file"] {
+    width: 100%;
+    border: none;
+    background: #ffd965;
+    color: #000;
+}
+
+form input[type="submit"] {
+    background: #000;
+    color: #ffd965;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background: #000;
+    color: #ffd965;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}

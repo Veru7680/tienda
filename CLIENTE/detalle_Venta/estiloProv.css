@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form_container {
+    margin-top: 3em;
+    display: grid;
+    size: 2.5em;
+    max-height: 400px; /* Establece la altura máxima deseada */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
+}
+
+/* Ajusta el tamaño de la tabla y habilita el desplazamiento horizontal si es necesario */
+#formularioCompra table {
+    max-width: 100%; /* Ajusta el ancho máximo de la tabla al 100% del contenedor */
+}
+
+/* Habilita el desplazamiento horizontal dentro del div contenedor */
+#formularioCompra {
+    overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: radial-gradient(#001c00, #004845, #fe7c0a);
+    background-size: 100% 100%; /* Ajustar el fondo al 100% tanto horizontal como verticalmente */
+ 
+    display: flex;
+    max-height: 100vh;
+    margin: 0; /* Para eliminar el margen predeterminado del cuerpo */
+}
+
+
+h2{
+    color: #001c00;
+}
+
+.form {
+    background-color: #ffffd2;
+    margin: 3em auto;
+    width: 90%;
+    height: 100%; /* Ajusta el alto del formulario al 100% del cuerpo */
+    padding: 4.5em 3em;
+    box-shadow: 0 5px 10px -5px rgba(190, 2, 2, 0.4);
+    text-align: center;
+}
+
+
+.form_tittle{
+    color: #fe7c0a;
+    font-size: 4rem;
+    margin-bottom: .5em;
+}
+
+
+
+.form_paragraph{
+    font-weight: 300;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    size: 2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color: #001c00;;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #030303;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+
+}

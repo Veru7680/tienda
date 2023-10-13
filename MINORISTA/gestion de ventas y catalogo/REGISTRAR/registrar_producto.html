@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="../../css/estilo1.css">
 </head>
 <body>
-    <form action="" method="post" class="form">
+    <form action="registrar_inventario_producto.php" method="post" class="form">
         <h2 class="form_tittle">Registar Producto</h2>
-
-            
         </p>
         <div class="form_container">
+            <div class="form_group">
+                <input name="foto" type="file" id="foto" accept=".jpg, .jpeg , .png" class="form_input" placeholder=" ">
+                <label for="foto" class="form_label">subir foto</label>
+                <span class="form_line"></span>
+            </div>
+            
             <div class="form_group">
                 <input name="Nombre" type="text" id="name" class="form_input" placeholder=" ">
                 <label for="name" class="form_label">Nombre</label>
@@ -27,11 +31,7 @@
                 <label for="stock" class="form_label">Stock</label>
                 <span class="form_line"></span>
             </div>
-            <div class="form_group">
-                <input name="IdCategoria" type="number" id="IdCategoria" class="form_input" placeholder=" ">
-                <label for="IdCategoria" class="form_label">Id-Categoria</label>
-                <span class="form_line"></span>
-            </div>
+           
             <div class="form_group">
                 <input name="Descripcion" type="text" id="Descripcion" class="form_input" placeholder=" ">
                 <label for="Descripcion" class="form_label">Nombre</label>

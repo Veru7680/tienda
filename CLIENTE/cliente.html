@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Menù Lateral con Css</title>
+	<link rel="stylesheet" href="fondo_cliente.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		
+		</div>
+		<!-- logged in user information -->
+		<?php  if (isset($_SESSION['Nombre'])) : ?>
+			<p>Bienvenido <strong><?php echo $_SESSION['Nombre']; ?></strong></p>
+			<p> <a href="index_cliente.php?logout='1'" style="color: red;">logout</a> </p>
+		<?php endif ?>
+
+			<div class="logo">
+				<h1>CATALOGO</h1>
+			</div>
+		
+
+			<nav class="menu">
+				<a href="index_cliente.html">Inicio</a>
+				<a href="../Login_Clientes/registrarse_cliente.php">Registrarse</a>
+				<a href="index1.php?logout='1'">Cerrar secion</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="#">CATEGORIA</a>
+			<a target="todo" href="prueba.php">PRODUCTOS</a>
+		
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<div class="slider">
+    <br>
+    <br>
+    <br>
+    
+    <iframe name="todo" class="todo" src="" frameborder="0" ></iframe>
+  
+  </div>
+</body>
+</html>

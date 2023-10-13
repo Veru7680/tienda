@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenido {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+.card {
+
+    font-family: 'Times New Roman', Times, serif;
+    background: radial-gradient(#a6ffa6, #b3fffb, #f0f0f0);
+    background-size: 100% 100%; /* Ajustar el fondo al 100% tanto horizontal como verticalmente */
+    background-repeat: no-repeat;
+    display: flex;
+    
+    width: 90%;
+    margin: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 400ms ease-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card figure img {
+   width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor de la figura */
+    max-height: 200px; /* Establece una altura máxima de 200px */
+    /* object-fit: cover; Ajusta la imagen al tamaño sin deformarla */
+    object-position: center; /* Centra la imagen verticalmente */
+    object-fit: contain;
+}
+
+.card .contenido {
+    padding: 19px;
+    text-align: center;
+}
+
+.card .contenido p {
+    line-height: 1.8;
+    color: #272727;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card .contenido p strong {
+    color:  #11265f;
+    font-weight: bold;
+}
+
+.card .contenido a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+
+.card .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .contenido {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 45px;
+    }
+}
+
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

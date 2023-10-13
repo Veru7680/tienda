@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to bottom, #004845, #001c00);
+    color: #ffffd2;
+    font-family: Times, 'Times New Roman', serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #001c00;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #004845;
+}
+
+tr:nth-child(even) {
+    background-color: #004845;
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
+}

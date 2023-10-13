@@ -72,11 +72,11 @@ nav{
 
 }
 .izquierda {
-    width: 100%;
-    margin: 10px;
-    height: 800px;
-    background-position: center top;
-    border: none;
-    
+  width: 100px;
+  margin: 120px;
+  padding: 50px 55px 55px 70px;
+  height: 800px;
+  background-position:center top;
+  
 }
 
