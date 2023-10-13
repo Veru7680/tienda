@@ -44,7 +44,7 @@
     
     .form-register .botons{
       width: 50%;
-      background: #ffd965;  
+      background: #fe7c0a;  
       border: none;
       padding: 12px;
       color: rgb(255, 255, 255);
@@ -53,7 +53,7 @@
     
     }
     body {
-       background: rgb(52, 121, 12);
-       background: radial-gradient(circle, #001c00 2%,  #004845 73%, #11657a 100%);
+       background:#ffd965;
+       
       }
       

@@ -1,7 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+body{
+	background-color:  #ffd965;
+}
+
 nav{
   max-width: 900px;
   margin: auto;
-  background-color: #333;
+  background-color: #004845;
     font-size: 20px;
     margin-top: 50px;
 }
