@@ -37,7 +37,7 @@ if ($result > 0) {
                     <p><strong>Stock:</strong> <?php echo $data['Stock'] ?></p>
                     <p><strong>Descripción:</strong></p>
                     <p><?php echo $data['Descripcion'] ?></p>
-					<a href="CLIENTE/detalle_Venta/REG_VENTA.php" class="btn-neon">
+					<a href="detalle_Venta/REG_VENTA.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
