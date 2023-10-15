@@ -6,7 +6,7 @@
 
 </head>
 <body>
-    <h1>Ventas realizadas</h1>
+    <h1>PEDIDOS</h1>
     <table>
         <tr>
             <th>Id</th>
