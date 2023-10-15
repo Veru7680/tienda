@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/estilo1.css">
 </head>
 <body>
-    <form action="ACTUALI_PRODUCTO.php" method="post" class="form">
+    <form action="ACTUALI_PRODUCTO.php" method="post" class="form" enctype="multipart/form-data">
         <h2 class="form_tittle">ACTUALIZAR PRODUCTO</h2>
         <div class="form_container">
             <div class="form_group">

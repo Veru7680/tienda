@@ -9,7 +9,7 @@ $stock = mysqli_real_escape_string($mysqli_link, $_POST["stock"]);
 $IdCategoria = mysqli_real_escape_string($mysqli_link, $_POST["IdCategoria"]);
 $foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 if ($nombre && $precio && $stock &&$IdCategoria and $id != "") {
-    $update_query = "UPDATE producto SET Nombre='$nombre', Precio='$precio', Stock='$stock', IdCategoria='$IdCategoria',foto='$foto' WHERE ID='$id'";
+    $update_query = "UPDATE producto SET Nombre='$nombre', Precio='$precio', Stock='$stock', IdCategoria='$IdCategoria', foto='$foto' WHERE ID='$id'";
     
     if ($mysqli_link->query($update_query)) {
         echo 'Registro actualizado exitosamente.';

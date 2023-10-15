@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/estilo1.css">
 </head>
 <body>
-    <form action="ACTUALI_Cliente.php" method="post" class="form">
+    <form action="ACTUALI_CLIENTE.php" method="post" class="form">
         <h2 class="form_tittle">ACTUALIZAR PERFIL</h2>
         <div class="form_container">
             <div class="form_group">
@@ -33,7 +33,7 @@
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
-                <input name="stock" type="email" id="stock" class="form_input" placeholder="ejemplo@gmail.cpm">
+                <input name="Correo" type="email" id="stock" class="form_input" placeholder="ejemplo@gmail.cpm">
                 <label for="stock" class="form_label">Nuevo Correo</label>
                 <span class="form_line"></span>
             </div>
