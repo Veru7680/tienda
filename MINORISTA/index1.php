@@ -38,14 +38,14 @@
 		<ul class="menu-horizontal">
 			
 			<li>
-				<a href="#">GESTION DE VENTAS Y CATALOGO</a>
+				<a href="#">GESTION DE CATALOGO</a>
 				<ul class="menu-vertical">
-                    <li><a href="gestion de ventas y catalogo/REGISTRAR/registrar_inventario_producto.php" target="derecha">REGISTAR INVENTARIO</a></li>
-					<li><a href="gestion de ventas y catalogo/ACTUALZAR/actualizar_producto.php" target="derecha">ACTUALIZAR INVENTARIO</a></li>
-                    <li><a href="gestion de ventas y catalogo/BORRAR/borrar_producto.php" target="derecha">BORRAR INVENTARIO</a></li>
+                    <li><a href="gestion de catalogo/REGISTRAR/registrar_inventario_producto.php" target="derecha">REGISTAR INVENTARIO</a></li>
+					<li><a href="gestion de catalogo/ACTUALZAR/actualizar_producto.php" target="derecha">ACTUALIZAR INVENTARIO</a></li>
+                    <li><a href="gestion de catalogo/BORRAR/borrar_producto.php" target="derecha">BORRAR INVENTARIO</a></li>
             
 
-					<li><a href="gestion de ventas y catalogo/MOSTRAR/mostrar_inventario_productos.php" target="izquierda">MOSTRAR CATALOGO</a></li>
+					<li><a href="gestion de catalogo/MOSTRAR/mostrar_inventario_productos.php" target="izquierda">MOSTRAR CATALOGO</a></li>
 				</ul>
 			</li>
 			

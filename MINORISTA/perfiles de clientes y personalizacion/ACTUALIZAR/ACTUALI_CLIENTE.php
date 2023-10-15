@@ -9,7 +9,7 @@ if ($nombre && $correo and $ID != "") {
     $update_query = "UPDATE usuarios SET Nombre='$nombre', correo='$correo' WHERE idusuario='$ID'";
     
     if ($mysqli_link->query($update_query)) {
-        echo 'Registro actualizado exitosamente.';
+        header('Location: exitoClienteUP.html');
     } else {
         echo 'Error al actualizar el registro: ' . $mysqli_link->error;
     }
