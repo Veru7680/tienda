@@ -1,6 +1,6 @@
 <?php
     require_once('../../../conexion.php');
-    $query=mysqli_query($mysqli_link,"SELECT ID, Nombre FROM producto");
+    $query=mysqli_query($mysqli_link,"SELECT idusuario, Nombre FROM usuarios");
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../css/estilo1.css">
 </head>
 <body>
-    <form action="BORR_PRODUCTO.php" method="post" class="form">
+    <form action="BORR_Cliente.php" method="post" class="form">
         <h2 class="form_tittle">Borrar PRODUCTO</h2>
         <div class="form_container">
             <div class="form_group">
@@ -21,7 +21,7 @@
                     while($datos = mysqli_fetch_array($query))
                 {
                 ?>
-                <option value="<?php echo $datos['ID']?>"> <?php echo $datos['ID']." ".$datos['Nombre']?> </option>
+                <option value="<?php echo $datos['idusuario']?>"> <?php echo $datos['idusuario']." ".$datos['Nombre']?> </option>
                 <?php
                 }
                 ?> 

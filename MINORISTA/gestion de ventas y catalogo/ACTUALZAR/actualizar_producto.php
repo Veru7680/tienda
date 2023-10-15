@@ -47,6 +47,10 @@
                 <label for="IdCategoria" class="form_label">Nueva Id-Categoria</label>
                 <span class="form_line"></span>
             </div>
+            <label for="foto">Subir foto:</label>
+            <input name="foto" type="file" class="form_input" required>
+            <br>
+
             <br>
             <br>
             <input type="submit" class="form_submit" value="Entrar">
