@@ -1,6 +1,6 @@
 <?php
     include "../../../conexion.php";
-    $query=mysqli_query($mysqli_link,"SELECT ID, Nombre FROM producto");
+    $query=mysqli_query($mysqli_link,"SELECT idusuario, Nombre FROM usuarios");
 ?>
 
 <html lang="en">
@@ -8,11 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="../../css/estilo1.css">
+    <link rel="stylesheet" href="actualizar.css">
 </head>
 <body>
-    <form action="ACTUALI_PRODUCTO.php" method="post" class="form">
-        <h2 class="form_tittle">ACTUALIZAR PRODUCTO</h2>
+    <form action="ACTUALI_CLIENTE.php" method="post" class="form">
+        <h2 class="form_tittle">ACTUALIZAR PERFIL</h2>
         <div class="form_container">
             <div class="form_group">
                 <select name="ID_actualizar" class="form_input">
@@ -20,7 +20,7 @@
                     while($datos = mysqli_fetch_array($query))
                 {
                 ?>
-                <option value="<?php echo $datos['ID']?>"> <?php echo $datos['Nombre']?> </option>
+                <option value="<?php echo $datos['idusuario']?>"> <?php echo $datos['idusuario']." ".$datos['Nombre']?> </option>
                 <?php
                 }
                 ?> 
@@ -33,19 +33,10 @@
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
-                <input name="precio" type="number" id="precio" class="form_input" placeholder=" ">
-                <label for="precio" class="form_label">Nuevo precio</label>
+                <input name="Correo" type="email" id="stock" class="form_input" placeholder="ejemplo@gmail.cpm">
+                <label for="stock" class="form_label">Nuevo Correo</label>
                 <span class="form_line"></span>
             </div>
-            <div class="form_group">
-                <input name="stock" type="number" id="stock" class="form_input" placeholder=" ">
-                <label for="stock" class="form_label">Nuevo Stock</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input name="IdCategoria" type="number" id="IdCategoria" class="form_input" placeholder=" ">
-                <label for="IdCategoria" class="form_label">Nueva Id-Categoria</label>
-                <span class="form_line"></span>
             </div>
             <br>
             <br>

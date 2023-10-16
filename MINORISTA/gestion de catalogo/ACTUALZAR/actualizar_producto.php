@@ -8,11 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="../../css/estilo1.css">
+    <link rel="stylesheet" href="../../../cssingreso/estil.css">
 </head>
 <body>
-    <form action="ACTUALI_PRODUCTO.php" method="post" class="form">
-        <h2 class="form_tittle">ACTUALIZAR PERFIL</h2>
+    <form action="ACTUALI_PRODUCTO.php" method="post" class="form" enctype="multipart/form-data">
+        <h2 class="form_tittle">ACTUALIZAR PRODUCTO</h2>
         <div class="form_container">
             <div class="form_group">
                 <select name="ID_actualizar" class="form_input">
@@ -47,6 +47,10 @@
                 <label for="IdCategoria" class="form_label">Nueva Id-Categoria</label>
                 <span class="form_line"></span>
             </div>
+            <label for="foto">Subir foto:</label>
+            <input name="foto" type="file" class="form_input" required>
+            <br>
+
             <br>
             <br>
             <input type="submit" class="form_submit" value="Entrar">

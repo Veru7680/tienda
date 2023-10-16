@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data">
+    <center><h3> AGREGAR PRODUCTO<h3></center>
         <label for="Nombre">Nombre:</label>
         <input name="Nombre" type="text" required>
         <br>

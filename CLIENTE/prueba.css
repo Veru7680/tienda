@@ -5,9 +5,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
 .contenido {
-    width: 100%;
-    max-width: 350px;
+    width: 400px;
+    max-width: auto;
     margin: auto;
 }
 
@@ -152,3 +156,4 @@
     transition: 1s;
     transition-delay: 0.75s;
 }
+

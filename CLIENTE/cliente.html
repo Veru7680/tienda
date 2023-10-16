@@ -1,3 +1,17 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['Nombre'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: ../Login_clientes/continuar_cliente.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['Nombre']);
+  	header("location: ../Login_clientes/continuar_cliente.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,17 +20,14 @@
 	<link rel="stylesheet" href="fondo_cliente.css">
 </head>
 <body>
+	
 	<header class="header">
 		<div class="container">
 		<div class="btn-menu">
 			<label for="btn-menu">☰</label>
 		
 		</div>
-		<!-- logged in user information -->
-		<?php  if (isset($_SESSION['Nombre'])) : ?>
-			<p>Bienvenido <strong><?php echo $_SESSION['Nombre']; ?></strong></p>
-			<p> <a href="index_cliente.php?logout='1'" style="color: red;">logout</a> </p>
-		<?php endif ?>
+
 
 			<div class="logo">
 				<h1>CATALOGO</h1>
@@ -24,9 +35,12 @@
 		
 
 			<nav class="menu">
-				<a href="index_cliente.html">Inicio</a>
+				<a href="index_cliente.php">Inicio</a>
 				<a href="../Login_Clientes/registrarse_cliente.php">Registrarse</a>
-				<a href="index1.php?logout='1'">Cerrar secion</a>
+				<?php  if (isset($_SESSION['Nombre'])) : ?>
+				<strong style= "color: white"><?php echo $_SESSION['Nombre']; ?></strong>
+				<a href="index_cliente.php?logout='1'" style="font-weight: bold; color: red;">Cerrar Secion</a> </p>
+		<?php endif ?>
 			</nav>
 		</div>
 	</header>
@@ -36,7 +50,7 @@
 <div class="container-menu">
 	<div class="cont-menu">
 		<nav>
-			<a href="#">CATEGORIA</a>
+		
 			<a target="todo" href="prueba.php">PRODUCTOS</a>
 		
 		</nav>
