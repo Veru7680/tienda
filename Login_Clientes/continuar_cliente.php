@@ -15,7 +15,7 @@
         <?php include('errors.php'); ?>
     <input class="controls" type="text" name="Nombre" id="" placeholder="ingrese su nombre" >
     <input class="controls" type="password" name="Clave" id="" placeholder="ingrese clave" >
-    <input class="botons" name="login_user" type="submit" value="registar">
+    <input class="botons" name="login_user" type="submit" value="registrar">
     <p>
     No te registraste? <a href="registrarse_cliente.php">Registrase-Sing Up</a>
     </p>

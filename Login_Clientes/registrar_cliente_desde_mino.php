@@ -24,7 +24,7 @@
   	  <label>Confirm password</label>
   	  <input class="controls" type="password" id="" name="password_2">
   	</div>
-    <input class="botons" type="submit" name="reg_user" value="registar">
+    <input class="botons" type="submit" name="reg_user" value="registrar">
   
     <div class="slider">
         <iframe name="contenido-dinamico" class="contenido-dinamico" src="" frameborder="0" ></iframe>

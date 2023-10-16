@@ -5,7 +5,9 @@
 	font-family: 'Open Sans';
 }
 body{
-	background-color:  #ffd965;
+	background-image: url('empinado.jpg');
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
 }
 
 nav{
@@ -47,5 +49,6 @@ nav{
   color: white;
   padding: 15px 15px 15px 20px;
   text-decoration: none;
+  
 }
 

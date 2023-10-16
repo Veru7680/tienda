@@ -9,7 +9,7 @@
     }
     .form-register{
         width: 500px;
-        background:#ffffd2;
+        background-image: radial-gradient(circle, #cb68b6, #a280cf, #7992d4, #659ec9, #6fa4b7);
         padding: 20 px;
         margin: auto;
         margin-top: 100px;
@@ -35,18 +35,20 @@
     
     
     .form-register a{
-        color: white;
+        color: rgb(114, 106, 106);
         text-decoration: none;
     }
     
     .form-register a:hover{
-       color: white;
+       color: rgb(5, 5, 5);
        text-decoration: underline;
     }
     
     .form-register .botons{
       width: 50%;
-      background: #ffd965;  
+      border-radius: 10px;
+      border: 2px solid#000000;
+      background: #36726f; 
       border: none;
       padding: 12px;
       color: rgb(255, 255, 255);
@@ -55,7 +57,8 @@
     
     }
     body {
-       background: rgb(52, 121, 12);
-       background: radial-gradient(circle, #001c00 2%,  #004845 73%, #11657a 100%);
+      background-image:url("../empinado.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat; 
       }
       
