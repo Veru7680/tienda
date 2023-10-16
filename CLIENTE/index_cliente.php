@@ -53,7 +53,7 @@
 	
 		<nav>
 		
-			<a target="todo" href="prueba1.php">PRODUCTOS</a>
+			<a target="todo" href="prueba.php">PRODUCTOS</a>
 		
 		</nav>
 		<label for="btn-menu">✖️</label>
