@@ -24,7 +24,7 @@
   	  <label>Confirm password</label>
   	  <input class="controls" type="password" id="" name="password_2">
   	</div>
-    <input class="botons" type="submit" name="reg_user" value="registar">
+    <input class="botons" type="submit" name="reg_user" value="registrar">
     <p>
     Ya estas registrado? <a href="continuar_cliente.php">Iniciar secion</a>
     </p>
