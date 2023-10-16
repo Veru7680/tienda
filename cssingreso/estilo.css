@@ -55,7 +55,8 @@
     
     }
     body {
-       background: rgb(52, 121, 12);
-       background: radial-gradient(circle, #001c00 2%,  #004845 73%, #11657a 100%);
+      background-image:url("../empinado.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat; 
       }
       
