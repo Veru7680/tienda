@@ -36,13 +36,13 @@ nav{
   display: none;
   list-style: none;
   width: 200px;
-  background-color: rgb(127, 255, 165);
+  background-color: rgb(62, 125, 141);
 }
 .menu-horizontal li:hover .menu-vertical{
   display: block;
 }
 .menu-vertical li:hover{
-  background-color: aquamarine;
+  background-color: rgb(127, 197, 173);
 }
 .menu-vertical li a{
   display: block;
