@@ -1,7 +1,11 @@
 body {
-    background: linear-gradient(to bottom, #004845, #001c00);
+   
     color: #ffffd2;
     font-family: Times, 'Times New Roman', serif;
+}
+
+h1{
+    color: #051200;
 }
 
 table {
@@ -10,7 +14,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #001c00;
+    border: 1px solid #002700;
     padding: 8px;
     text-align: left;
 }
@@ -19,8 +23,8 @@ th {
     background-color: #004845;
 }
 
-tr:nth-child(even) {
-    background-color: #004845;
+tr {
+    background-color: #17181fb7;
 }
 
 img {
