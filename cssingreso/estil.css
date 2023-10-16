@@ -1,5 +1,8 @@
 body {
-    background: linear-gradient(to bottom, #ffd965, #004845);
+    background:  #1c2474 ;
+    width: 400px; /* Ancho deseado, puedes ajustarlo según tus necesidades */
+    height: 200px;
+    margin: auto;
     color: #000;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px; /* Ajusta el tamaño de fuente, por ejemplo, a 14px */
@@ -9,51 +12,58 @@ body {
 
 
 form {
-    background: #004845;
+    background: linear-gradient( #6ca4fc,  #513817 );
     padding: 20px;
     border-radius: 10px;
+    height: auto;
+    width: auto;
 }
 
 form label, form input, form textarea {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.2px;
 }
 
 form input[type="text"],
 form input[type="number"],
 form textarea {
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 8px;
     border: none;
     border-radius: 5px;
-    background: #fcfcfb;
-    color: #000;
+    background: #f7f7f7ce;
+   
 }
 
 form input[type="file"] {
     width: 100%;
     border: none;
-    background: #ffd965;
+    background: #ffc106;
     color: #000;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  
 }
 
 form input[type="submit"] {
-    background: #000;
-    color: #ffd965;
-    padding: 10px 20px;
-    border: none;
+    background: #f6cf44;
+    color: #000000;
+    padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button {
-    background: #000;
-    color: #ffd965;
-    padding: 10px 20px;
-    border: none;
+    background:  #f6cf44  ;
+    color: #0399a3;
+    padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+    font-weight: bold;
 }

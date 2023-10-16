@@ -10,7 +10,7 @@
     <h1>Clientes</h1>
     <?php
      include "../../../conexion.php";
-    $select_query = "SELECT * FROM usuarios LIMIT 10";
+    $select_query = "SELECT * FROM usuarios LIMIT 40";
     $result = mysqli_query($mysqli_link, $select_query);
     ?>
     <table>

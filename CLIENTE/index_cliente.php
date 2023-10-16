@@ -20,12 +20,14 @@
 	<link rel="stylesheet" href="fondo_cliente.css">
 </head>
 <body>
+	
 	<header class="header">
 		<div class="container">
 		<div class="btn-menu">
 			<label for="btn-menu">☰</label>
 		
 		</div>
+
 
 			<div class="logo">
 				<h1>CATALOGO</h1>
@@ -43,13 +45,15 @@
 		</div>
 	</header>
 	<div class="capa"></div>
-<!--	--------------->
+<!--  caa oscurece mi menu de pructo	--------------->
 <input type="checkbox" id="btn-menu">
 <div class="container-menu">
+
 	<div class="cont-menu">
+	
 		<nav>
 		
-			<a target="todo" href="prueba.php">PRODUCTOS</a>
+			<a target="todo" href="prueba1.php">PRODUCTOS</a>
 		
 		</nav>
 		<label for="btn-menu">✖️</label>

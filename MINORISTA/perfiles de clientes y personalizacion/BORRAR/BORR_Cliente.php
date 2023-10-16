@@ -12,7 +12,7 @@ $delete_query = "DELETE FROM usuarios WHERE `idusuario` = '$ID'";
 
 // Ejecuta la consulta de eliminación
 if (mysqli_query($mysqli_link, $delete_query)) {
-    echo 'Producto Borrado correctamente.';
+    echo 'Cliente Borrado correctamente.';
 } else {
     echo 'Error en la eliminación: ' . mysqli_error($mysqli_link);
 }
