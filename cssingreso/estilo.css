@@ -35,12 +35,12 @@
     
     
     .form-register a{
-        color: white;
+        color: rgb(114, 106, 106);
         text-decoration: none;
     }
     
     .form-register a:hover{
-       color: white;
+       color: rgb(5, 5, 5);
        text-decoration: underline;
     }
     
